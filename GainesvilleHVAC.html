@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gainesville HVAC | Expert Heating & Cooling Services</title>
+    
+    <!-- Google Fonts: Inter for clean, modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0F4C81',    // Deep Trust Blue
+                            dark: '#0A2540',    // Navy Dark
+                            accent: '#F97316',  // Energetic Orange for CTAs
+                            light: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-brand-light selection:bg-brand-accent selection:text-white">
+
+    <!-- Navigation -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-brand-blue text-white p-2 rounded-lg group-hover:bg-brand-accent transition-colors duration-300">
+                    <i class="fa-solid fa-fan text-xl animate-[spin_8s_linear_infinite]"></i>
+                </div>
+                <span class="font-bold text-2xl tracking-tight text-brand-dark">Gainesville<span class="text-brand-accent">HVAC</span></span>
+            </a>
+            
+            <!-- Desktop Nav & Contact -->
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#services" class="text-gray-600 hover:text-brand-blue transition-colors">Services</a>
+                <a href="#reviews" class="text-gray-600 hover:text-brand-blue transition-colors">Reviews</a>
+                
+                <div class="flex items-center gap-6 border-l border-gray-200 pl-6">
+                    <a href="tel:4709435910" class="flex items-center gap-2 text-brand-dark hover:text-brand-accent transition-colors font-bold text-lg">
+                        <i class="fa-solid fa-phone-volume"></i> (470) 943-5910
+                    </a>
+                    <a href="#contact" class="bg-brand-accent hover:bg-orange-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Get an Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 hover:text-brand-blue focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-brand-dark text-white overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-no-repeat"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 flex flex-col items-start justify-center min-h-[80vh]">
+            
+            <!-- Social Proof Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6 shadow-sm">
+                <div class="flex text-yellow-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-sm font-medium">5.0 ★ (26 Reviews)</span>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6 max-w-3xl">
+                Reliable Comfort, <br> <span class="text-brand-accent">All Year Round.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                Gainesville's trusted local experts for rapid, professional heating and cooling solutions. We ensure your system runs efficiently when you need it most.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#contact" class="flex items-center justify-center gap-2 bg-brand-accent hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg shadow-orange-500/30 transform hover:-translate-y-1">
+                    Get a Free Estimate <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:4709435910" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fa-solid fa-phone"></i> Call (470) 943-5910
+                </a>
+            </div>
+            
+            <!-- Quick Features -->
+            <div class="mt-12 flex flex-wrap gap-6 text-sm font-medium text-gray-300">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-brand-accent"></i> Local & Insured</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-brand-accent"></i> Upfront Pricing</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-brand-accent"></i> Satisfaction Guaranteed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Badges Section -->
+    <section class="bg-brand-blue py-8 relative z-10 -mt-6 mx-4 sm:mx-6 lg:mx-auto max-w-7xl rounded-2xl shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-blue-400/30">
+            <div class="flex items-center justify-center p-6 text-white gap-4">
+                <i class="fa-solid fa-truck-fast text-4xl text-brand-accent"></i>
+                <div>
+                    <h3 class="font-bold text-lg">24/7 Emergency Service</h3>
+                    <p class="text-blue-100 text-sm">Always ready when you need us</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center p-6 text-white gap-4">
+                <i class="fa-solid fa-award text-4xl text-brand-accent"></i>
+                <div>
+                    <h3 class="font-bold text-lg">Expert Technicians</h3>
+                    <p class="text-blue-100 text-sm">Highly trained professionals</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center p-6 text-white gap-4">
+                <i class="fa-solid fa-star text-4xl text-brand-accent"></i>
+                <div>
+                    <h3 class="font-bold text-lg">5.0 Star Rated</h3>
+                    <p class="text-blue-100 text-sm">Backed by 26 local reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section id="services" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-accent font-bold tracking-wider uppercase text-sm mb-2">What We Do</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">Comprehensive HVAC Services</h3>
+                <p class="text-gray-600 text-lg">From routine maintenance to full system installations, our expert team ensures your environment is perfectly climate-controlled.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue transition-colors duration-300">
+                        <i class="fa-regular fa-snowflake text-2xl text-brand-blue group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">AC Repair & Install</h4>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Seamless cooling system installations and rapid repairs to beat the heat.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-300">
+                        <i class="fa-solid fa-fire text-2xl text-brand-accent group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Heating Systems</h4>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Keep warm during colder weather with thorough heating system tune-ups.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
+                        <i class="fa-solid fa-wind text-2xl text-green-600 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Ductless Systems</h4>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Quiet and efficient ductless performance upgrades installed in an afternoon.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fa-solid fa-screwdriver-wrench text-2xl text-purple-600 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Maintenance</h4>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Detailed AC & HVAC checks to ensure your system is running like new.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Testimonials Section -->
+    <section id="reviews" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-brand-accent font-bold tracking-wider uppercase text-sm mb-2">Customer Testimonials</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">Trusted by Gainesville Residents</h3>
+                    <p class="text-gray-600 text-lg">See why our customers rate us 5.0 ★ across 26 reviews for our exceptional HVAC contracting services.</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="https://maps.app.goo.gl/1Ymg6LKaMnBPsWXb7" target="_blank" class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:text-brand-dark transition-colors">
+                        Read all 26 reviews <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Review Grid (Masonry effect using CSS Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Heating system now runs better than ever after thorough service. Technician explained every step and showed strong expertise."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">DA</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Damian Alvaro</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Technician arrived on time and carefully checked the heating system. Thorough work left the customer confident the system is ready for colder weather."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold">AP</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Ashton Pierce</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Ductless heating system installed in one afternoon. Friendly technicians explained everything clearly."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">BR</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Bryant Rebekah</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Cooling system installation was seamless. Technicians arrived early and demonstrated strong professionalism and expertise."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">BB</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Bella Bryce</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"AC maintenance completed in under an hour. Technician explained what needed attention and handled everything efficiently."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">BA</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Brayan Alexis</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="flex text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Upgraded to a ductless system with quiet and efficient performance. Technician was knowledgeable and explained the entire installation process."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">AA</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">Adalynn Ashtyn</p>
+                            <p class="text-xs text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-brand-blue relative py-16 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Need Your System Checked?</h2>
+            <p class="text-blue-100 text-lg mb-8">Whether it's an emergency or routine maintenance, our team is ready to help restore your comfort immediately.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:4709435910" class="bg-white text-brand-blue font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-gray-50 transition-colors transform hover:-translate-y-1">
+                    <i class="fa-solid fa-phone mr-2"></i> (470) 943-5910
+                </a>
+                <a href="#contact" class="bg-brand-accent text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-orange-600 transition-colors transform hover:-translate-y-1 border border-transparent">
+                    Get an Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Branding -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-fan text-brand-accent text-2xl"></i>
+                        <span class="font-bold text-2xl tracking-tight text-white">Gainesville<span class="text-brand-accent">HVAC</span></span>
+                    </div>
+                    <p class="mb-4 max-w-sm">Top-rated HVAC contractor serving the Gainesville area with professional heating, cooling, and ductless system services.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-yelp text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-google text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">AC Installation</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Heating Repair</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Ductless Systems</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">HVAC Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-accent"></i>
+                            <span>Gainesville, GA<br>Serving surrounding areas</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-accent"></i>
+                            <a href="tel:4709435910" class="hover:text-white transition-colors">(470) 943-5910</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock text-brand-accent"></i>
+                            <span>24/7 Emergency Service</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm">
+                <p>&copy; 2024 Gainesville HVAC Services. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
